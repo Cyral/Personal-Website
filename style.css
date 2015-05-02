@@ -1,0 +1,70 @@
+/* Font used for all text in the container */
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
+/* Reset margins and fill entire space */
+html, body, .container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+  /* Background image for the page */
+  background: #254463 url('background.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  /* Page color and font */
+  color: #FFF;
+  font-family: 'Slabo 27px', serif;
+}
+
+/* Contains the main content, limits its width, and centers the content */
+.container {
+  margin: auto;
+  max-width: 900px;
+  
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+  display: table;
+}
+
+/* Another container for adding a darkened background and making it fill the entire height */
+.container .inner {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: table-row;  
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, .2);
+}
+
+/* Final container for containing the page content */
+.container .inner .content {
+  margin: 0px 48px;
+  padding: 32px;
+}
+
+/* A bit of resizing of the main content items */
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+p {
+  font-size: 1.1em;
+}
+
+/* Styling for social icons */
+i.fa {
+  padding: 0 8px;
+  color: #FFF;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+i.fa:hover {
+  color: #00C5DB;
+}
