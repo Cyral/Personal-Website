@@ -68,3 +68,16 @@ i.fa {
 i.fa:hover {
   color: #00C5DB;
 }
+
+/* Make our font sizes look better and fit the page on mobile */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: .8em;
+  }
+}
