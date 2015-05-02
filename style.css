@@ -45,6 +45,7 @@ body {
 .container .inner .content {
   margin: 0px 48px;
   padding: 32px;
+  min-width: 768;
 }
 
 /* A bit of resizing of the main content items */
@@ -69,7 +70,7 @@ i.fa:hover {
   color: #00C5DB;
 }
 
-/* Make our font sizes look better and fit the page on mobile */
+/* Make the site look better and fit the page on mobile */
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 2em;
@@ -79,5 +80,10 @@ i.fa:hover {
   }
   p {
     font-size: .8em;
+  }
+  .container .inner .content {
+    margin: 0px;
+    padding: 0px;
+    min-width: 320px;
   }
 }
