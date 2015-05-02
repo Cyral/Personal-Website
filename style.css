@@ -71,7 +71,7 @@ i.fa:hover {
 }
 
 /* Make the site look better and fit the page on mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   h1 {
     font-size: 2em;
   }
@@ -79,7 +79,10 @@ i.fa:hover {
     font-size: 1.2em;
   }
   p {
-    font-size: .8em;
+    font-size: 1em;
+  }
+  .container {
+    max-width: 90%;
   }
   .container .inner .content {
     margin: 0 16px;
